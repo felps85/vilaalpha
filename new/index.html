@@ -19,23 +19,28 @@
 
 
   <body>
-    <!-- FB Messenger code - Load Facebook SDK for JavaScript -->
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
 
-    <!-- FB customer chat code -->
-    <div class="fb-customerchat"
-      page_id="136263319783059"
-      logged_in_greeting="Olá, como posso te ajudar?"
-      logged_out_greeting="Oi, tudo bem? Entre no facebook para que possamos conversar. :)"
-      greeting_dialog_display="hide">
-    </div>
+
+    <!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/pt_BR/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+  attribution="setup_tool"
+  page_id="136263319783059"
+  theme_color="#0084ff"
+  logged_in_greeting="Olá, como posso te ajudar?"
+  logged_out_greeting="Oi, tudo bem? Entre no facebook para que possamos conversar. :)"
+  greeting_dialog_display="hide">
+</div>
+
 
 
 
@@ -344,8 +349,8 @@
 
 
 
-    <!-- JS and other stuff -->
-    <span class="skype-button bubble " data-contact-id="vila.alpha"></span>
+    
+    
 
    
 
@@ -356,6 +361,7 @@
     
 
     <!-- Skype code -->
+    <span class="skype-button bubble " data-contact-id="vila.alpha"></span>
     <script src="https://swc.cdn.skype.com/sdk/v1/sdk.min.js"></script>
     
 
