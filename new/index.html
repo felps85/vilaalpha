@@ -47,6 +47,10 @@
 
 
 
+
+
+
+
     <nav class="navbar navbar-expand-sm navbar-light bg-light">
       <div class="container">
         <a class="navbar-brand" href="#">Vila Alpha</a>
@@ -83,33 +87,10 @@
             </li><!-- end menu items -->
             
 
+<!-- lightbox-80862900718359 -->
 
 
 
-            <!-- Modal -->
-            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                  <!-- <div class="modal-header">
-                    
-                  </div> -->
-                  <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                    
-
-
- <iframe id="JotFormIFrame-80862900718359" onload="window.parent.scrollTo(0,0)" allowtransparency="true" allowfullscreen="true" allow="geolocation; microphone; camera" src="https://form.jotformeu.com/vilaalpha/contato" frameborder="0" style="width: 1px; min-width: 100%; height:539px; border:none;" scrolling="no" > </iframe> <script type="text/javascript"> var ifr = document.getElementById("JotFormIFrame-80862900718359"); if(window.location.href && window.location.href.indexOf("?") > -1) { var get = window.location.href.substr(window.location.href.indexOf("?") + 1); if(ifr && get.length > 0) { var src = ifr.src; src = src.indexOf("?") > -1 ? src + "&" + get : src + "?" + get; ifr.src = src; } } window.handleIFrameMessage = function(e) { var args = e.data.split(":"); if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[(args.length - 1)]); } else { iframe = document.getElementById("JotFormIFrame"); } if (!iframe) { return; } switch (args[0]) { case "scrollIntoView": iframe.scrollIntoView(); break; case "setHeight": iframe.style.height = args[1] + "px"; break; case "collapseErrorPage": if (iframe.clientHeight > window.innerHeight) { iframe.style.height = window.innerHeight + "px"; } break; case "reloadPage": window.location.reload(); break; case "loadScript": var src = args[1]; if (args.length > 3) { src = args[1] + ':' + args[2]; } var script = document.createElement('script'); script.src = src; script.type = 'text/javascript'; document.body.appendChild(script); break; case "exitFullscreen": if (window.document.exitFullscreen) window.document.exitFullscreen(); else if (window.document.mozCancelFullScreen) window.document.mozCancelFullScreen(); else if (window.document.mozCancelFullscreen) window.document.mozCancelFullScreen(); else if (window.document.webkitExitFullscreen) window.document.webkitExitFullscreen(); else if (window.document.msExitFullscreen) window.document.msExitFullscreen(); break; } var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false; if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) { var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)}; iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*"); } }; if (window.addEventListener) { window.addEventListener("message", handleIFrameMessage, false); } else if (window.attachEvent) { window.attachEvent("onmessage", handleIFrameMessage); } </script>
-
-
-                    <!-- <script type="text/javascript" src="https://form.jotformeu.com/jsform/80862900718359"></script> -->
-                  </div>
-
-                  
-                </div>
-              </div>
-            </div>
 
 
 
@@ -160,15 +141,28 @@
 
 
 
+
+
+
             <!-- modal -->
             <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-lg">
                 <div class="modal-content">
-                  <script type="text/javascript" src="https://form.jotformeu.com/jsform/80862900718359"></script>
+                  <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <script type="text/javascript" src="https://form.jotformeu.com/jsform/80862900718359"></script>
+                  </div>
                 </div>
               </div>
             </div>
             <!-- end modal -->
+
+
 
           </div> <!-- close col 1 -->
 
@@ -213,7 +207,7 @@
             <img class="card-img-top" src="img/educacao1infantil-1.png" alt="Crianças pintando e olhar profundo na Educação Infantil">
             <div class="card-body">
               <h2 class="card-title">Educação Infantil</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text">Somos educadores que nos maravilhamos com as ações desses pequenos, que embora vulneráveis, são criativos e competentes.</p>
               <a href="#" class="btn btn-outline-dark btn-lg mt-3">Saiba mais</a>
             </div>
           </div> <!-- end of card 1 -->
@@ -230,7 +224,7 @@
             <img class="card-img-top" src="img/ensino-fundamental-1.png" alt="Crianças tirando fotos com máquina no Ensino Fundamental 1">
             <div class="card-body">
               <h2 class="card-title">Ensino Fundamental I</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text">Utilizamos a estratégia de colocar o foco do processo de aprendizagem no aluno e não mais na transmissão de informação que o professor tradicionalmente realizava.</p>
               <a href="#" class="btn btn-outline-dark btn-lg mt-3">Saiba mais</a>
             </div>
           </div> <!-- end of card 2 -->
@@ -268,20 +262,31 @@
 
 
       <!-- youtube video -->
-      <section>
+      <section class="my-5">
         <div class="container">
           <div class="row">
-            <div class="col">
+            <div class="col mb-3">
 
-              <iframe width="100%" height="400" src="https://www.youtube.com/embed/Z8K1a3s7MB4?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              <iframe class="border border-dark rounded" width="100%" height="600" src="https://www.youtube.com/embed/Z8K1a3s7MB4?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div> <!-- end col -->
+          </div> <!-- end row -->
+        </div>
+        <div class="container">
+          <h2 class="text-center display-4">Nossa Missão</h2>
+          <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8 text-center">
+              <p>A missão da Escola Vila Alpha é conseguir estabelecer diálogos entre o conhecimento, a família, a escola, a natureza e a criança. Oferece atenção de forma honesta e prazerosa, acreditando e valorizando as potencialidades da criança, contribuindo na construção de seu conhecimento e caráter, despertando a consciência da atuação em sociedade e dos deveres e direitos de cada cidadão.</p>
             </div>
+            <div class="col-2"></div>
           </div>
-        </div>  
+        </div>  <!-- end container -->
       </section>  
 
 
       <!-- Google Maps -->
       <section>
+      <h2 class="text-center display-4">Como Chegar?</h2>
       <div id="floating-panel">
         <b>Do: </b>
         <select id="start">
@@ -378,8 +383,6 @@
 
     
     
-
-   
 
 
 

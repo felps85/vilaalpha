@@ -83,3 +83,18 @@ footer ul{
     margin: 0;
     padding: 0;
 }
+
+.newspaper {
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+
+    -webkit-column-gap: 2rem; /* Chrome, Safari, Opera */
+    -moz-column-gap: 2rem; /* Firefox */
+    column-gap: 2rem;
+
+    -webkit-column-rule: 4px double var(--red-color); /* Chrome, Safari, Opera */
+    -moz-column-rule: 4px double var(--red-color); /* Firefox */
+    column-rule: 4px double var(--red-color);
+}
+
