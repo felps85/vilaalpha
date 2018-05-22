@@ -11,6 +11,10 @@
   
 }
 
+img {
+  max-width: 100%;
+}
+
 :root {
   --green-color: #4D4D4D;
   --black-color: #00F37F;
@@ -55,11 +59,6 @@ body{
 /* On mouse-over, add a deeper shadow */
 .card:hover {
     box-shadow: 0px 3px 8px 0px rgba(156,136,8,0.3);
-}
-
-.hero{
-  max-height: 90vh;
-  right: 0;
 }
 
 
