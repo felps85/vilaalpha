@@ -19,8 +19,8 @@ h1 {
 h2 {
   margin-top: 20px;
   margin-bottom: 10px;
-  font-size: 32px;
-  line-height: 36px;
+  font-size: 22px;
+  line-height: 28px;
   font-weight: 700;
 }
 
@@ -269,7 +269,7 @@ strong {
   padding-top: 12px;
   padding-bottom: 12px;
   border-radius: 6px;
-  background-color: #80d3f1;
+  background-color: #fdef3c;
   font-weight: 600;
   text-align: center;
 }
@@ -329,7 +329,7 @@ strong {
 
 .tablink {
   display: inline-block;
-  width: 18%;
+  /*width: 18%;*/
   margin-right: 5px;
   margin-left: 5px;
   border-radius: 3px;
@@ -344,7 +344,7 @@ strong {
 }
 
 .tablink.fun {
-  width: 31%;
+  width: 20%;
   background-color: #80d3f1;
 }
 
@@ -702,8 +702,8 @@ strong {
     line-height: 21px;
   }
   .main {
-    font-size: 30px;
-    line-height: 38px;
+    font-size: 20px;
+    line-height: 28px;
   }
   .menu-buttom {
     margin-top: 17px;
