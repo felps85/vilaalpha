@@ -94,8 +94,8 @@ footer ul{
 }
 
 .modal-content {
-  background: none;
-  border:0;
+  background: none !important;
+  border:0 !important;
 
 }
 
@@ -104,5 +104,5 @@ footer ul{
 .jfForm-backgroundOverlay,
 .jfForm-background,
 .formFooter {
-  display: none;
+  display: none !important;
 }
