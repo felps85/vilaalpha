@@ -99,3 +99,10 @@ footer ul{
 
 }
 
+.jfForm-backgroundContainer,
+.jfForm-backgroundUnderlay,
+.jfForm-backgroundOverlay,
+.jfForm-background,
+.formFooter {
+  display: none;
+}
