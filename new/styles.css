@@ -93,3 +93,9 @@ footer ul{
     column-rule: 4px double var(--red-color);
 }
 
+.modal-content {
+  background: none;
+  border:0;
+
+}
+
