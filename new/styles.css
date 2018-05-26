@@ -93,16 +93,8 @@ footer ul{
     column-rule: 4px double var(--red-color);
 }
 
-.modal-content {
+.modal .modal-dialog .modal-content {
   background: none !important;
   border:0 !important;
 
-}
-
-.jfForm-backgroundContainer,
-.jfForm-backgroundUnderlay,
-.jfForm-backgroundOverlay,
-.jfForm-background,
-.formFooter {
-  display: none !important;
 }
