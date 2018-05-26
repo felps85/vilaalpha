@@ -94,7 +94,12 @@ footer ul{
 }
 
 .modal .modal-dialog .modal-content {
-  background: none !important;
   border:0 !important;
+  background-color: transparent;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    background: none !important;
 
 }
