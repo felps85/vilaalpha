@@ -51,7 +51,7 @@
 
 <!-- Navbar -->
 
-    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <nav class="navbar navbar-expand-md fixed-top navbar-light bg-light">
       <div class="container">
         <a class="navbar-brand" href="#">Vila Alpha</a>
         
@@ -74,10 +74,10 @@
 
             <!-- menu items -->
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Infantil</a>
+              <a class="nav-link" href="educacao-infantil-escola-vilaalpha.html">Infantil</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Fundamental</a>
@@ -97,7 +97,7 @@
             <!-- dropdown Acesso-->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Acesso
+                Login
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
                 <a class="dropdown-item" href="http://sistemaeducamais.com.br/vilaalpha/pais/" target="_blank">Pais</a>
@@ -267,12 +267,12 @@
 
 
           <!-- start of card 1 -->
-          <div class="card text-center border-dark">
-            <img class="card-img-top" src="img/educacao1infantil-1.png" alt="Crianças pintando e olhar profundo na Educação Infantil">
+          <div class="card text-center border-dark two-cards-size shadow-yellow">
+            <img class="card-img-top shadow-yellow circle-shape" src="img/educacao1infantil-1.png" alt="Crianças pintando e olhar profundo na Educação Infantil">
             <div class="card-body">
-              <h2 class="card-title">Educação Infantil</h5>
+              <h2 class="card-title">Educação Infantil</h2>
               <p class="card-text">Somos educadores que nos maravilhamos com as ações desses pequenos, que embora vulneráveis, são criativos e competentes.</p>
-              <a href="#" class="btn btn-outline-dark btn-lg mt-3">Saiba mais</a>
+              <a href="educacao-infantil-escola-vilaalpha.html" class="btn btn-outline-dark btn-lg mt-3">Saiba mais</a>
             </div>
           </div> <!-- end of card 1 -->
         
@@ -284,10 +284,10 @@
 
 
           <!-- start of card 2 -->
-          <div class="card text-center border-dark">
-            <img class="card-img-top" src="img/ensino-fundamental-1.png" alt="Crianças tirando fotos com máquina no Ensino Fundamental 1">
+          <div class="card text-center border-dark two-cards-size shadow-yellow">
+            <img class="card-img-top shadow-yellow circle-shape" src="img/ensino-fundamental-1.png" alt="Crianças tirando fotos com máquina no Ensino Fundamental 1">
             <div class="card-body">
-              <h2 class="card-title">Ensino Fundamental I</h5>
+              <h2 class="card-title">Ensino Fundamental I</h2>
               <p class="card-text">Utilizamos a estratégia de colocar o foco do processo de aprendizagem no aluno e não mais na transmissão de informação que o professor tradicionalmente realizava.</p>
               <a href="#" class="btn btn-outline-dark btn-lg mt-3">Saiba mais</a>
             </div>
@@ -297,11 +297,9 @@
 
 
 
+        
         </div>
-      </div>
-    </div>
-     <div class="container-fluid">
-      <div class="row">
+  
       
 
       </div><!-- end row -->
@@ -349,7 +347,7 @@
 
 
       <!-- Google Maps -->
-      <section>
+      <section class="position-relative">
       <h2 class="text-center display-4">Como Chegar?</h2>
       <div id="floating-panel">
         <b>Do: </b>
@@ -365,6 +363,7 @@
       </div> <!-- closing floating panel -->
 
       <div id="map"></div>
+      
       &nbsp;
       <div id="warnings-panel"></div>
       </section>
@@ -372,19 +371,17 @@
 
     
 
-
-
-
-    <!-- Footer start -->
-
-     <!-- red divider normal -->
-
+<!-- red divider normal -->
         <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="133" viewBox="0 0 1440 133" class="d-block">
             <g fill="#FF5A6E">
               <path d="M-720-18.8C-376-179.8-73.8 133.2 720-18.8L720 66.2 -720 66.2 -720-18.8Z" transform="translate(720 66.763095)scale(-1 1)"/>
             </g>
         </svg>
 
+
+    <!-- Footer start -->
+
+     
 
 
 
@@ -419,16 +416,20 @@
           </div>
           <div class="col-md-3 col-sm-12">
             <h3>Social</h3>
-            <address>
-                <ul>
-                  <li><a href="https://www.facebook.com/vila.alpha.educacao/" target="_blank">Facebook</a></li>
-                  <li><a href="https://www.instagram.com/vilaalpha/" target="_blank">Instagram</a></li>
-                  <li><a href="https://www.linkedin.com/company/escola-vila-alpha/" target="_blank">LinkedIn</a></li>
-                  <li><a href="https://twitter.com/vilaalpha/" target="_blank">Twitter</a></li>
-                  <li><a href="https://youtube.com/vilaalpha" target="_blank">Youtube</a></li>
-                  <li><a href="https://foursquare.com/vilaalpha" target="_blank">Foursquare</a></li>
+                <ul class="d-flex flex-row flex-wrap mb-3">
+                  <li><a href="https://www.facebook.com/vila.alpha.educacao/" target="_blank">
+                    <img alt="facebook" class="social m-3" src="img/icon/facebook-logo.svg"></a></li>
+                  <li><a href="https://www.instagram.com/vilaalpha/" target="_blank">
+                    <img alt="instagram" class="social m-3" src="img/icon/instagram-logo.svg"></a></li>
+                  <li><a href="https://www.linkedin.com/company/escola-vila-alpha/" target="_blank">
+                    <img alt="linkedin" class="social m-3" src="img/icon/linkedin-logo.svg"></a></li>
+                  <li><a href="https://twitter.com/vilaalpha/" target="_blank">
+                    <img alt="twitter" class="social m-3" src="img/icon/twitter-logo.svg"></a></li>
+                  <li><a href="https://youtube.com/vilaalpha" target="_blank">
+                    <img alt="youtube" class="social m-3" src="img/icon/youtube-logo.svg"></a></li>
+                  <li><a href="https://foursquare.com/vilaalpha" target="_blank">
+                    <img alt="foursquare" class="social m-3" src="img/icon/foursquare-logo.svg"></a></li>
               </ul>
-            </address>
           </div>
         </div>
 
