@@ -1,6 +1,5 @@
 var fireworks = (function() {
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
+  
   var canvasEl = document.querySelector('.fireworks');
   var ctx = canvasEl.getContext('2d');
   var numberOfParticules = Number(location.href.split('?')[1]) || 40;
