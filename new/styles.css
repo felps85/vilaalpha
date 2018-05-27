@@ -169,14 +169,27 @@ p.first-line::first-line {
 
 .navbar-toggler {
   border: none;
+  padding: 0;
+  background: transparent !important;
 }
+.navbar-toggler:focus {
+  outline: none;
+  background: transparent !important;
+}
+
+/*.navbar-toggler .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+}*/
 
 #nav-icon4 {
   width: 60px;
   height: 45px;
   position: relative;
-  margin: 50px auto;
-  -webkit-transform: rotate(0deg);
+/*  margin: 50px auto;
+*/  -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
   transform: rotate(0deg);
@@ -187,12 +200,12 @@ p.first-line::first-line {
   cursor: pointer;
 }
 
-#nav-icon4 span {
+#nav-icon4 .icon-bar  {
   display: block;
   position: absolute;
   height: 9px;
   width: 100%;
-  background: #d3531a;
+  background: var(--red-color);
   border-radius: 9px;
   opacity: 1;
   left: 0;
@@ -208,10 +221,10 @@ p.first-line::first-line {
 
 
 #nav-icon4 {
-  transform: scale(0.7);
+  transform: scale(0.5);
 }
 
-#nav-icon4 span:nth-child(1) {
+#nav-icon4 .icon-bar:nth-child(1) {
   top: 0px;
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
@@ -219,7 +232,7 @@ p.first-line::first-line {
   transform-origin: left center;
 }
 
-#nav-icon4 span:nth-child(2) {
+#nav-icon4 .icon-bar:nth-child(2) {
   top: 18px;
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
@@ -227,7 +240,7 @@ p.first-line::first-line {
   transform-origin: left center;
 }
 
-#nav-icon4 span:nth-child(3) {
+#nav-icon4 .icon-bar:nth-child(3) {
   top: 36px;
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
@@ -235,7 +248,7 @@ p.first-line::first-line {
   transform-origin: left center;
 }
 
-#nav-icon4.open span:nth-child(1) {
+#nav-icon4.open .icon-bar:nth-child(1) {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
@@ -244,12 +257,12 @@ p.first-line::first-line {
   left: 8px;
 }
 
-#nav-icon4.open span:nth-child(2) {
+#nav-icon4.open .icon-bar:nth-child(2) {
   width: 0%;
   opacity: 0;
 }
 
-#nav-icon4.open span:nth-child(3) {
+#nav-icon4.open .icon-bar:nth-child(3) {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
