@@ -12,8 +12,8 @@
 }
 
 :root {
-  --green-color: #4D4D4D;
-  --black-color: #00F37F;
+  --green-color: #00F37F;
+  --black-color: #4D4D4D;
   --yellow-color: #FFE95A;
   --red-color: #FF5A6E;
 }
@@ -148,4 +148,10 @@ footer ul{
 p.first-line::first-line { 
     background-color: var(--yellow-color);
     font-size: 1.2rem;
+}
+
+.fireworks{
+    position: absolute;
+    widows: 100%;
+    height: 100%;
 }
