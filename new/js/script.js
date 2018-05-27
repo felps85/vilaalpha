@@ -1,5 +1,5 @@
 $('.fireworks').click(function(e){
-window.location = $('*').attr('href');\
+window.location = $('*').attr('href');
 })
 
 
