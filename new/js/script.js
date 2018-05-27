@@ -1,3 +1,12 @@
+$('.fireworks').click(function(e){
+window.location = $('*').attr('href');\
+})
+
+
+
+
+// Google maps
+
 function initMap() {
   var markerArray = [];
 
