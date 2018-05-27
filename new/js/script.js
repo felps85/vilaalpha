@@ -1,6 +1,4 @@
-$('.fireworks').click(function(e){
-window.location = $('*').attr('href');
-})
+
 
 
 // Google maps
@@ -66,3 +64,7 @@ function calculateAndDisplayRoute(directionsDisplay, directionsService,
     }
   });
 }
+
+$('.fireworks').click(function(e){
+window.location = $('*').attr('href');
+});
