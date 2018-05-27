@@ -151,7 +151,7 @@ p.first-line::first-line {
 }
 
 .fireworks{
-    position: absolute;
+    position: fixed;
     left:0px;
     top:0px;
     width: 100%;
