@@ -5,6 +5,7 @@ window.location = $('*').attr('href');\
 
 
 
+
 // Google maps
 
 function initMap() {

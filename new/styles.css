@@ -163,3 +163,10 @@ p.first-line::first-line {
 .svg-divider{
   width: 100% \9;
 }
+
+
+
+
+nav > div > .navbar-collapse .show {
+    font-size: 4rem;
+}
