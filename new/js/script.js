@@ -3,13 +3,6 @@ window.location = $('*').attr('href');\
 })
 
 
-$(document).ready(function(){
-  $('#nav-icon4').click(function(){
-    $(this).toggleClass('open');
-  });
-});
-
-
 // Google maps
 
 function initMap() {
