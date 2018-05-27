@@ -152,6 +152,7 @@ p.first-line::first-line {
 
 .fireworks{
     position: fixed;
+    z-index: 2000;
     left:0px;
     top:0px;
     width: 100%;
