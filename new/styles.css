@@ -172,11 +172,11 @@ p.first-line::first-line {
 }
 
 #nav-icon4 {
-  width: 30px;
-  height: 20px;
+  width: 60px;
+  height: 45px;
   position: relative;
-/*  margin: 50px auto;
-*/  -webkit-transform: rotate(0deg);
+  margin: 50px auto;
+  -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
   transform: rotate(0deg);
@@ -190,10 +190,10 @@ p.first-line::first-line {
 #nav-icon4 span {
   display: block;
   position: absolute;
-  height: 4px;
+  height: 9px;
   width: 100%;
-  background: var(--red-color);
-  border-radius: 3px;
+  background: #d3531a;
+  border-radius: 9px;
   opacity: 1;
   left: 0;
   -webkit-transform: rotate(0deg);
@@ -206,6 +206,11 @@ p.first-line::first-line {
   transition: .25s ease-in-out;
 }
 
+
+#nav-icon4 {
+  transform: scale(0.7);
+}
+
 #nav-icon4 span:nth-child(1) {
   top: 0px;
   -webkit-transform-origin: left center;
@@ -215,7 +220,7 @@ p.first-line::first-line {
 }
 
 #nav-icon4 span:nth-child(2) {
-  top: 8px;
+  top: 18px;
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
   -o-transform-origin: left center;
@@ -223,7 +228,7 @@ p.first-line::first-line {
 }
 
 #nav-icon4 span:nth-child(3) {
-  top: 16px;
+  top: 36px;
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
   -o-transform-origin: left center;
@@ -252,3 +257,4 @@ p.first-line::first-line {
   top: 39px;
   left: 8px;
 }
+
