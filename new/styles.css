@@ -51,6 +51,11 @@ body{
 
 }
 
+.logo-nav{
+  display: block;
+  height: 50px;
+}
+
 .two-cards-size{
   padding: 2rem;
   margin: 4vw;
