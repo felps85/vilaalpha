@@ -95,6 +95,33 @@ body{
 }
 
 
+/* SVG Divider */
+.yellow-wave path {
+  fill: var(--yellow-color);
+  stroke: var(--yellow-color);
+}
+
+.red-wave path {
+  fill: var(--red-color);
+  stroke: var(--red-color);
+}
+
+.wave::before,
+.wave::after {
+  position: absolute;
+  content: '';
+  pointer-events: none;
+}
+
+.wave {
+  overflow: hidden;
+  width:100%;
+  margin:0px;
+
+}
+
+
+
 #floating-panel {
   position: relative;
   z-index: 5;
@@ -112,8 +139,8 @@ body{
 
 footer ul{
     list-style: none;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 
 .newspaper {
@@ -140,6 +167,7 @@ footer ul{
     background: none !important;
 
 }
+
 
 .social {
   width: 40px;
@@ -236,3 +264,4 @@ p.first-line::first-line {
   transform: rotate(-45deg) translate(4px, -4px);
   transition: ease all .2s;
 }
+
