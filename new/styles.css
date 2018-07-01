@@ -7,15 +7,6 @@
   box-sizing: border-box;
 }
 
-.hero-image {
-   background: url("img/vilaalpha-header-2.png") no-repeat left top fixed;
-   background-size: 100%;
-}
-
-.hero-text {
-   width: 50%;
-}
-
 #map {
   height: 600px;
   width: 100%;
@@ -40,11 +31,9 @@ body{
 .svg-close{
   width: 2rem;
   margin: 1rem;
-
 }
 
 .close{
-
 opacity: 1;
 }
 
@@ -52,6 +41,27 @@ body{
   min-height: 75rem;
   padding-top: 3.5rem;
 }
+
+.hero-image {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.45), 
+      rgba(255, 255, 255, 0.45)
+    ), url("img/vilaalpha-header-4.png");
+  background-repeat: no-repeat;
+  background-position: bottom fixed;
+  background-size: cover;
+
+  /*background-image: url("img/vilaalpha-header-1.png"), 
+              url("img/vilaalpha-header-4.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left center fixed, bottom fixed;
+  background-size: 30vw, cover;*/
+}
+
+.hero-text {
+   width: 50%;
+}
+
 
 .red-bg {
   background-color: var(--red-color);
@@ -341,4 +351,24 @@ p.first-line::first-line {
 .btn-primary:active, .btn-primary.active {
     background: var(--green-color);
     box-shadow: none;
+}
+
+.thumb{
+  position: relative;
+  width: 35px;
+  height: 35px;
+  overflow: hidden;
+  margin: .2rem;
+}
+.thumb img {
+  object-fit: cover;
+  
+}
+
+.bigger-thumb{
+  position: relative;
+  width: 110px;
+  height: 110px;
+  overflow: hidden;
+  margin: .2rem;
 }
