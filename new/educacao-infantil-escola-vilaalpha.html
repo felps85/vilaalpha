@@ -26,7 +26,7 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 
 <!-- blue imp -->
-    <link rel="stylesheet" href="css/blueimp-gallery.min.css">
+    <link rel="stylesheet" href="css/blueimp-gallery.css">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
@@ -246,35 +246,35 @@
       <!-- The Gallery as lightbox dialog, should be a child element of the document body -->
 
 
-   
+                
+
+
         <div class="container my-5">
           <h1 class="text-center display-4">Educação Infantil</h1>
           <div class="row my-5">
-            <div class="col-md-8 d-flex align-items-center">
+            <div class="col-md-6 d-flex align-items-center">
               <p class="first-line px-5">Adotamos como base o conceito de criança como um sujeito situado social e historicamente, que vivencia e produz bens de cultura ao compartilhar contextos distintos de vida com seus pares e com os adultos. Vista em suas possibilidades físicas, cognitivas, afetivas e sociais, a criança é considerada um ser ativo, capaz de participar do processo educativo com seus conhecimentos e experiências e de alcançar, progressivamente, a <strong>autonomia</strong>. Deixa, portanto, de ser pensada como um projeto de homem futuro para ser vista como alguém hoje, ser ativo e sujeito de direitos, bem como de suas ações. 
               </p>
             </div>
-            <div class="col-md-4 order-first order-md-2 my-3">
-              <div id="links" class="d-flex flex-wrap">
-                <a href="img/educacao_infantil/atelie/atelie_educacao_infantil_1.JPG" title="Educação Infantil">
-                    <div class="thumb bigger-thumb"><img src="img/educacao_infantil/atelie/thumb/atelie_educacao_infantil_1.JPG" alt="Banana"></div>
-                </a>
-                <a href="img/educacao_infantil/atelie/atelie_educacao_infantil_2.JPG" title="Educação Infantil">
-                    <div class="thumb bigger-thumb"><img src="img/educacao_infantil/atelie/thumb/atelie_educacao_infantil_2.JPG" alt="Banana"></div>
-                </a>
-                <a href="img/educacao_infantil/atelie/atelie_educacao_infantil_3.JPG" title="Educação Infantil">
-                    <div class="thumb bigger-thumb"><img src="img/educacao_infantil/atelie/thumb/atelie_educacao_infantil_3.JPG" alt="Banana"></div>
-                </a>
-                <a href="img/educacao_infantil/atelie/atelie_educacao_infantil_4.JPG" title="Educação Infantil">
-                    <div class="thumb bigger-thumb"><img src="img/educacao_infantil/atelie/thumb/atelie_educacao_infantil_4.JPG" alt="Banana"></div>
-                </a>
-                <a href="img/educacao_infantil/atelie/atelie_educacao_infantil_5.JPG" title="Educação Infantil">
-                    <div class="thumb bigger-thumb"><img src="img/educacao_infantil/atelie/thumb/atelie_educacao_infantil_5.JPG" alt="Banana"></div>
-                </a>
-                <a href="img/educacao_infantil/atelie/atelie_educacao_infantil_6.JPG" title="Educação Infantil">
-                    <div class="thumb bigger-thumb"><img src="img/educacao_infantil/atelie/thumb/atelie_educacao_infantil_6.JPG" alt="Banana"></div>
-                </a>
-            </div>  
+            <div class="col-md-6 order-first order-md-2 my-3">
+              <div id="blueimp-gallery-carousel" class="blueimp-gallery blueimp-gallery-controls blueimp-gallery-carousel">
+                <div class="slides"></div>
+                <h3 class="title"></h3>
+                <a class="prev"><img class="svg-close rotate180" src="img/icon/chevron.svg" alt="anterior"></a>
+                <a class="next"><img class="svg-close" src="img/icon/chevron.svg" alt="avançar"></a>
+            <!--     <a class="close"><img class="svg-close" src="img/icon/cancel.svg" alt="fechar"></a>
+             --><a class="play-pause"></a>
+                <ol class="indicator"></ol>
+              </div>  
+              
+              <div id="carousel-infantil-1" class="d-flex flex-wrap">
+                  <a href="img/educacao_infantil/atelie/atelie_educacao_infantil_1.JPG" title="Educação Infantil"></a>
+                  <a href="img/educacao_infantil/atelie/atelie_educacao_infantil_2.JPG" title="Educação Infantil"></a>
+                  <a href="img/educacao_infantil/atelie/atelie_educacao_infantil_3.JPG" title="Educação Infantil"></a>
+                  <a href="img/educacao_infantil/atelie/atelie_educacao_infantil_4.JPG" title="Educação Infantil"></a>
+                  <a href="img/educacao_infantil/atelie/atelie_educacao_infantil_5.JPG" title="Educação Infantil"></a>
+                  <a href="img/educacao_infantil/atelie/atelie_educacao_infantil_6.JPG" title="Educação Infantil"></a>
+              </div>  
                           <!-- <img class="circle-shape img-fluid px-5" src="img/educacao1infantil-1.png" alt="Crianças pintando e olhar profundo na Educação Infantil"> -->
 
             </div>
@@ -293,15 +293,7 @@
           </div>
 
 
-<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
-    <div class="slides"></div>
-    <h3 class="title"></h3>
-    <a class="prev">‹</a>
-    <a class="next">›</a>
-    <a class="close"><img class="svg-close" src="img/icon/cancel.svg" alt="fechar"></a>
-    <a class="play-pause"></a>
-    <ol class="indicator"></ol>
-</div>
+
 
           <!-- third row -->
           <div class="row my-5">
@@ -316,146 +308,164 @@
               <br><strong>Período Integral – das 7h30 às 18h30</strong> 
               </p>
             </div>
-            <div class="col-md-4 order-first order-md-2 my-3">
-              <div id="links" class="d-flex flex-wrap">
-                <a href="img/educacao_infantil/educacao_infantil_1.JPG" title="Educação Infantil">
-                    <div class="thumb"><img src="img/educacao_infantil/thumb/educacao_infantil_1.JPG" alt="Banana"></div>
-                </a>
-                <a href="img/educacao_infantil/educacao_infantil_2.JPG" title="Educação Infantil">
-                    <div class="thumb"><img src="img/educacao_infantil/thumb/educacao_infantil_2.JPG" alt="Apple"></div>
-                </a>
-                <a href="img/educacao_infantil/educacao_infantil_3.JPG" title="Educação Infantil">
-                    <div class="thumb"><img src="img/educacao_infantil/thumb/educacao_infantil_3.JPG" alt="Orange"></div>
-                </a>
-                <a href="img/educacao_infantil/educacao_infantil_4.JPG" title="Educação Infantil">
-                    <div class="thumb"><img src="img/educacao_infantil/thumb/educacao_infantil_4.JPG" alt="Banana"></div>
-                </a>
-                <a href="img/educacao_infantil/educacao_infantil_5.JPG" title="Educação Infantil">
-                    <div class="thumb"><img src="img/educacao_infantil/thumb/educacao_infantil_5.JPG" alt="Apple"></div>
-                </a>
-                <a href="img/educacao_infantil/educacao_infantil_6.JPG" title="Educação Infantil">
-                    <div class="thumb"><img src="img/educacao_infantil/thumb/educacao_infantil_6.JPG" alt="Orange"></div>
-                </a>
-                <a href="img/educacao_infantil/educacao_infantil_7.JPG" title="Educação Infantil">
-                    <div class="thumb"><img src="img/educacao_infantil/thumb/educacao_infantil_7.JPG" alt="Banana"></div>
-                </a>
-                <a href="img/educacao_infantil/educacao_infantil_8.JPG" title="Educação Infantil">
-                    <div class="thumb"><img src="img/educacao_infantil/thumb/educacao_infantil_8.JPG" alt="Apple"></div>
-                </a>
-                <a href="img/educacao_infantil/educacao_infantil_9.JPG" title="Educação Infantil">
-                    <div class="thumb"><img src="img/educacao_infantil/thumb/educacao_infantil_9.JPG" alt="Orange"></div>
-                </a>
-                <a href="img/educacao_infantil/educacao_infantil_10.JPG" title="Educação Infantil">
-                    <div class="thumb"><img src="img/educacao_infantil/thumb/educacao_infantil_10.JPG" alt="Banana"></div>
-                </a>
-                <a href="img/educacao_infantil/educacao_infantil_11.JPG" title="Educação Infantil">
-                    <div class="thumb"><img src="img/educacao_infantil/thumb/educacao_infantil_11.JPG" alt="Apple"></div>
-                </a>
-                <a href="img/educacao_infantil/educacao_infantil_12.JPG" title="Educação Infantil">
-                    <div class="thumb"><img src="img/educacao_infantil/thumb/educacao_infantil_12.JPG" alt="Orange"></div>
-                </a>
-                <a href="img/educacao_infantil/educacao_infantil_13.JPG" title="Educação Infantil">
-                    <div class="thumb"><img src="img/educacao_infantil/thumb/educacao_infantil_13.JPG" alt="Banana"></div>
-                </a>
-                <a href="img/educacao_infantil/educacao_infantil_14.JPG" title="Educação Infantil">
-                    <div class="thumb"><img src="img/educacao_infantil/thumb/educacao_infantil_14.JPG" alt="Apple"></div>
-                </a>
-                <a href="img/educacao_infantil/educacao_infantil_16.JPG" title="Educação Infantil">
-                    <div class="thumb"><img src="img/educacao_infantil/thumb/educacao_infantil_16.JPG" alt="Orange"></div>
-                </a>
-                <a href="img/educacao_infantil/educacao_infantil_17.JPG" title="Educação Infantil">
-                    <div class="thumb"><img src="img/educacao_infantil/thumb/educacao_infantil_17.JPG" alt="Orange"></div>
-                </a>
-                <a href="img/educacao_infantil/educacao_infantil_18.JPG" title="Educação Infantil">
-                    <div class="thumb"><img src="img/educacao_infantil/thumb/educacao_infantil_18.JPG" alt="Orange"></div>
-                </a>
-                <a href="img/educacao_infantil/educacao_infantil_19.JPG" title="Educação Infantil">
-                    <div class="thumb"><img src="img/educacao_infantil/thumb/educacao_infantil_19.JPG" alt="Orange"></div>
-                </a>
-                <a href="img/educacao_infantil/educacao_infantil_20.JPG" title="Educação Infantil">
-                    <div class="thumb"><img src="img/educacao_infantil/thumb/educacao_infantil_20.JPG" alt="Orange"></div>
-                </a>
-                <a href="img/educacao_infantil/educacao_infantil_21.JPG" title="Educação Infantil">
-                    <div class="thumb"><img src="img/educacao_infantil/thumb/educacao_infantil_21.JPG" alt="Orange"></div>
-                </a>
-                <a href="img/educacao_infantil/educacao_infantil_22.JPG" title="Educação Infantil">
-                    <div class="thumb"><img src="img/educacao_infantil/thumb/educacao_infantil_22.JPG" alt="Orange"></div>
-                </a>
-                <a href="img/educacao_infantil/educacao_infantil_23.JPG" title="Educação Infantil">
-                    <div class="thumb"><img src="img/educacao_infantil/thumb/educacao_infantil_23.JPG" alt="Orange"></div>
-                </a>
-                <a href="img/educacao_infantil/educacao_infantil_24.JPG" title="Educação Infantil">
-                    <div class="thumb"><img src="img/educacao_infantil/thumb/educacao_infantil_24.JPG" alt="Orange"></div>
-                </a>
 
-                <a href="img/educacao_infantil/educacao_infantil_25.JPG" title="Educação Infantil">
-                    <div class="thumb"><img src="img/educacao_infantil/thumb/educacao_infantil_25.JPG" alt="Banana"></div>
-                </a>
-                <a href="img/educacao_infantil/educacao_infantil_26.JPG" title="Educação Infantil">
-                    <div class="thumb"><img src="img/educacao_infantil/thumb/educacao_infantil_26.JPG" alt="Apple"></div>
-                </a>
-                <a href="img/educacao_infantil/educacao_infantil_27.JPG" title="Educação Infantil">
-                    <div class="thumb"><img src="img/educacao_infantil/thumb/educacao_infantil_27.JPG" alt="Orange"></div>
-                </a>
-                <a href="img/educacao_infantil/educacao_infantil_28.JPG" title="Educação Infantil">
-                    <div class="thumb"><img src="img/educacao_infantil/thumb/educacao_infantil_28.JPG" alt="Banana"></div>
-                </a>
-                <a href="img/educacao_infantil/educacao_infantil_29.JPG" title="Educação Infantil">
-                    <div class="thumb"><img src="img/educacao_infantil/thumb/educacao_infantil_29.JPG" alt="Apple"></div>
-                </a>
-                <a href="img/educacao_infantil/educacao_infantil_30.JPG" title="Educação Infantil">
-                    <div class="thumb"><img src="img/educacao_infantil/thumb/educacao_infantil_30.JPG" alt="Orange"></div>
-                </a>
-                <a href="img/educacao_infantil/educacao_infantil_31.JPG" title="Educação Infantil">
-                    <div class="thumb"><img src="img/educacao_infantil/thumb/educacao_infantil_31.JPG" alt="Banana"></div>
-                </a>
-                <a href="img/educacao_infantil/educacao_infantil_32.JPG" title="Educação Infantil">
-                    <div class="thumb"><img src="img/educacao_infantil/thumb/educacao_infantil_32.JPG" alt="Apple"></div>
-                </a>
-                <a href="img/educacao_infantil/educacao_infantil_33.JPG" title="Educação Infantil">
-                    <div class="thumb"><img src="img/educacao_infantil/thumb/educacao_infantil_33.JPG" alt="Orange"></div>
-                </a>
-                <a href="img/educacao_infantil/educacao_infantil_34.JPG" title="Educação Infantil">
-                    <div class="thumb"><img src="img/educacao_infantil/thumb/educacao_infantil_34.JPG" alt="Banana"></div>
-                </a>
-                <a href="img/educacao_infantil/educacao_infantil_35.JPG" title="Educação Infantil">
-                    <div class="thumb"><img src="img/educacao_infantil/thumb/educacao_infantil_35.JPG" alt="Apple"></div>
-                </a>
-                <a href="img/educacao_infantil/educacao_infantil_36.JPG" title="Educação Infantil">
-                    <div class="thumb"><img src="img/educacao_infantil/thumb/educacao_infantil_36.JPG" alt="Orange"></div>
-                </a>
-                <a href="img/educacao_infantil/educacao_infantil_37.JPG" title="Educação Infantil">
-                    <div class="thumb"><img src="img/educacao_infantil/thumb/educacao_infantil_37.JPG" alt="Banana"></div>
-                </a>
-                <a href="img/educacao_infantil/educacao_infantil_38.JPG" title="Educação Infantil">
-                    <div class="thumb"><img src="img/educacao_infantil/thumb/educacao_infantil_38.JPG" alt="Apple"></div>
-                </a>
-                <a href="img/educacao_infantil/educacao_infantil_39.JPG" title="Educação Infantil">
-                    <div class="thumb"><img src="img/educacao_infantil/thumb/educacao_infantil_39.JPG" alt="Orange"></div>
-                </a>
-                <a href="img/educacao_infantil/educacao_infantil_40.JPG" title="Educação Infantil">
-                    <div class="thumb"><img src="img/educacao_infantil/thumb/educacao_infantil_40.JPG" alt="Orange"></div>
-                </a>
-                <a href="img/educacao_infantil/educacao_infantil_41.JPG" title="Educação Infantil">
-                    <div class="thumb"><img src="img/educacao_infantil/thumb/educacao_infantil_41.JPG" alt="Orange"></div>
-                </a>
-                <a href="img/educacao_infantil/educacao_infantil_42.JPG" title="Educação Infantil">
-                    <div class="thumb"><img src="img/educacao_infantil/thumb/educacao_infantil_42.JPG" alt="Orange"></div>
-                </a>
-                <a href="img/educacao_infantil/educacao_infantil_43.JPG" title="Educação Infantil">
-                    <div class="thumb"><img src="img/educacao_infantil/thumb/educacao_infantil_43.JPG" alt="Orange"></div>
-                </a>
-                <a href="img/educacao_infantil/educacao_infantil_44.JPG" title="Educação Infantil">
-                    <div class="thumb"><img src="img/educacao_infantil/thumb/educacao_infantil_44.JPG" alt="Orange"></div>
-                </a>
-                <a href="img/educacao_infantil/educacao_infantil_45.JPG" title="Educação Infantil">
-                    <div class="thumb"><img src="img/educacao_infantil/thumb/educacao_infantil_45.JPG" alt="Orange"></div>
-                </a>
-                <a href="img/educacao_infantil/educacao_infantil_46.JPG" title="Educação Infantil">
-                    <div class="thumb"><img src="img/educacao_infantil/thumb/educacao_infantil_46.JPG" alt="Orange"></div>
-                </a>
+
+            <div class="col-md-4 order-first order-md-2 my-3">
+              
+              <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+                    <div class="slides"></div>
+                    <h3 class="title"></h3>
+                    <a class="prev"><img class="svg-close rotate180" src="img/icon/chevron.svg" alt="anterior"></a>
+                    <a class="next"><img class="svg-close" src="img/icon/chevron.svg" alt="avançar"></a>
+                    <a class="close"><img class="svg-close" src="img/icon/cancel.svg" alt="fechar"></a>
+                    <a class="play-pause"></a>
+                    <ol class="indicator"></ol>
+                </div>
                 
-              </div>
+
+                <div id="links" class="d-flex flex-wrap">
+
+                  <a href="img/educacao_infantil/educacao_infantil_1.JPG" title="Educação Infantil">
+                      <img class="thumb" src="img/educacao_infantil/thumb/educacao_infantil_1.JPG" alt="Banana">
+                  </a>
+                  <a href="img/educacao_infantil/educacao_infantil_2.JPG" title="Educação Infantil">
+                      <img class="thumb" src="img/educacao_infantil/thumb/educacao_infantil_2.JPG" alt="Apple">
+                  </a>
+                  <a href="img/educacao_infantil/educacao_infantil_3.JPG" title="Educação Infantil">
+                      <img class="thumb" src="img/educacao_infantil/thumb/educacao_infantil_3.JPG" alt="Orange">
+                  </a>
+                  <a href="img/educacao_infantil/educacao_infantil_4.JPG" title="Educação Infantil">
+                      <img class="thumb" src="img/educacao_infantil/thumb/educacao_infantil_4.JPG" alt="Banana">
+                  </a>
+                  <a href="img/educacao_infantil/educacao_infantil_5.JPG" title="Educação Infantil">
+                      <img class="thumb" src="img/educacao_infantil/thumb/educacao_infantil_5.JPG" alt="Apple">
+                  </a>
+                  <a href="img/educacao_infantil/educacao_infantil_6.JPG" title="Educação Infantil">
+                      <img class="thumb" src="img/educacao_infantil/thumb/educacao_infantil_6.JPG" alt="Orange">
+                  </a>
+                  <a href="img/educacao_infantil/educacao_infantil_7.JPG" title="Educação Infantil">
+                      <img class="thumb" src="img/educacao_infantil/thumb/educacao_infantil_7.JPG" alt="Banana">
+                  </a>
+                  <a href="img/educacao_infantil/educacao_infantil_8.JPG" title="Educação Infantil">
+                      <img class="thumb" src="img/educacao_infantil/thumb/educacao_infantil_8.JPG" alt="Apple">
+                  </a>
+                  <a href="img/educacao_infantil/educacao_infantil_9.JPG" title="Educação Infantil">
+                      <img class="thumb" src="img/educacao_infantil/thumb/educacao_infantil_9.JPG" alt="Orange">
+                  </a>
+                  <a href="img/educacao_infantil/educacao_infantil_10.JPG" title="Educação Infantil">
+                      <img class="thumb" src="img/educacao_infantil/thumb/educacao_infantil_10.JPG" alt="Banana">
+                  </a>
+                  <a href="img/educacao_infantil/educacao_infantil_11.JPG" title="Educação Infantil">
+                      <img class="thumb" src="img/educacao_infantil/thumb/educacao_infantil_11.JPG" alt="Apple">
+                  </a>
+                  <a href="img/educacao_infantil/educacao_infantil_12.JPG" title="Educação Infantil">
+                      <img class="thumb" src="img/educacao_infantil/thumb/educacao_infantil_12.JPG" alt="Orange">
+                  </a>
+                  <a href="img/educacao_infantil/educacao_infantil_13.JPG" title="Educação Infantil">
+                      <img class="thumb" src="img/educacao_infantil/thumb/educacao_infantil_13.JPG" alt="Banana">
+                  </a>
+                  <a href="img/educacao_infantil/educacao_infantil_14.JPG" title="Educação Infantil">
+                      <img class="thumb" src="img/educacao_infantil/thumb/educacao_infantil_14.JPG" alt="Apple">
+                  </a>
+                  <a href="img/educacao_infantil/educacao_infantil_15.JPG" title="Educação Infantil">
+                      <img class="thumb" src="img/educacao_infantil/thumb/educacao_infantil_15.JPG" alt="Apple">
+                  </a>
+                  <a href="img/educacao_infantil/educacao_infantil_16.JPG" title="Educação Infantil">
+                      <img class="thumb" src="img/educacao_infantil/thumb/educacao_infantil_16.JPG" alt="Orange">
+                  </a>
+                  <a href="img/educacao_infantil/educacao_infantil_17.JPG" title="Educação Infantil">
+                      <img class="thumb" src="img/educacao_infantil/thumb/educacao_infantil_17.JPG" alt="Orange">
+                  </a>
+                  <a href="img/educacao_infantil/educacao_infantil_18.JPG" title="Educação Infantil">
+                      <img class="thumb" src="img/educacao_infantil/thumb/educacao_infantil_18.JPG" alt="Orange">
+                  </a>
+                  <a href="img/educacao_infantil/educacao_infantil_19.JPG" title="Educação Infantil">
+                      <img class="thumb" src="img/educacao_infantil/thumb/educacao_infantil_19.JPG" alt="Orange">
+                  </a>
+                  <a href="img/educacao_infantil/educacao_infantil_20.JPG" title="Educação Infantil">
+                      <img class="thumb" src="img/educacao_infantil/thumb/educacao_infantil_20.JPG" alt="Orange">
+                  </a>
+                  <a href="img/educacao_infantil/educacao_infantil_21.JPG" title="Educação Infantil">
+                      <img class="thumb" src="img/educacao_infantil/thumb/educacao_infantil_21.JPG" alt="Orange">
+                  </a>
+                  <a href="img/educacao_infantil/educacao_infantil_22.JPG" title="Educação Infantil">
+                      <img class="thumb" src="img/educacao_infantil/thumb/educacao_infantil_22.JPG" alt="Orange">
+                  </a>
+                  <a href="img/educacao_infantil/educacao_infantil_23.JPG" title="Educação Infantil">
+                      <img class="thumb" src="img/educacao_infantil/thumb/educacao_infantil_23.JPG" alt="Orange">
+                  </a>
+                  <a href="img/educacao_infantil/educacao_infantil_24.JPG" title="Educação Infantil">
+                      <img class="thumb" src="img/educacao_infantil/thumb/educacao_infantil_24.JPG" alt="Orange">
+                  </a>
+
+                  <a href="img/educacao_infantil/educacao_infantil_25.JPG" title="Educação Infantil">
+                      <img class="thumb" src="img/educacao_infantil/thumb/educacao_infantil_25.JPG" alt="Banana">
+                  </a>
+                  <a href="img/educacao_infantil/educacao_infantil_26.JPG" title="Educação Infantil">
+                      <img class="thumb" src="img/educacao_infantil/thumb/educacao_infantil_26.JPG" alt="Apple">
+                  </a>
+                  <a href="img/educacao_infantil/educacao_infantil_27.JPG" title="Educação Infantil">
+                      <img class="thumb" src="img/educacao_infantil/thumb/educacao_infantil_27.JPG" alt="Orange">
+                  </a>
+                  <a href="img/educacao_infantil/educacao_infantil_28.JPG" title="Educação Infantil">
+                      <img class="thumb" src="img/educacao_infantil/thumb/educacao_infantil_28.JPG" alt="Banana">
+                  </a>
+                  <a href="img/educacao_infantil/educacao_infantil_29.JPG" title="Educação Infantil">
+                      <img class="thumb" src="img/educacao_infantil/thumb/educacao_infantil_29.JPG" alt="Apple">
+                  </a>
+                  <a href="img/educacao_infantil/educacao_infantil_30.JPG" title="Educação Infantil">
+                      <img class="thumb" src="img/educacao_infantil/thumb/educacao_infantil_30.JPG" alt="Orange">
+                  </a>
+                  <a href="img/educacao_infantil/educacao_infantil_31.JPG" title="Educação Infantil">
+                      <img class="thumb" src="img/educacao_infantil/thumb/educacao_infantil_31.JPG" alt="Banana">
+                  </a>
+                  <a href="img/educacao_infantil/educacao_infantil_32.JPG" title="Educação Infantil">
+                      <img class="thumb" src="img/educacao_infantil/thumb/educacao_infantil_32.JPG" alt="Apple">
+                  </a>
+                  <a href="img/educacao_infantil/educacao_infantil_33.JPG" title="Educação Infantil">
+                      <img class="thumb" src="img/educacao_infantil/thumb/educacao_infantil_33.JPG" alt="Orange">
+                  </a>
+                  <a href="img/educacao_infantil/educacao_infantil_34.JPG" title="Educação Infantil">
+                      <img class="thumb" src="img/educacao_infantil/thumb/educacao_infantil_34.JPG" alt="Banana">
+                  </a>
+                  <a href="img/educacao_infantil/educacao_infantil_35.JPG" title="Educação Infantil">
+                      <img class="thumb" src="img/educacao_infantil/thumb/educacao_infantil_35.JPG" alt="Apple">
+                  </a>
+                  <a href="img/educacao_infantil/educacao_infantil_36.JPG" title="Educação Infantil">
+                      <img class="thumb" src="img/educacao_infantil/thumb/educacao_infantil_36.JPG" alt="Orange">
+                  </a>
+                  <a href="img/educacao_infantil/educacao_infantil_37.JPG" title="Educação Infantil">
+                      <img class="thumb" src="img/educacao_infantil/thumb/educacao_infantil_37.JPG" alt="Banana">
+                  </a>
+                  <a href="img/educacao_infantil/educacao_infantil_38.JPG" title="Educação Infantil">
+                      <img class="thumb" src="img/educacao_infantil/thumb/educacao_infantil_38.JPG" alt="Apple">
+                  </a>
+                  <a href="img/educacao_infantil/educacao_infantil_39.JPG" title="Educação Infantil">
+                      <img class="thumb" src="img/educacao_infantil/thumb/educacao_infantil_39.JPG" alt="Orange">
+                  </a>
+                  <a href="img/educacao_infantil/educacao_infantil_40.JPG" title="Educação Infantil">
+                      <img class="thumb" src="img/educacao_infantil/thumb/educacao_infantil_40.JPG" alt="Orange">
+                  </a>
+                  <a href="img/educacao_infantil/educacao_infantil_41.JPG" title="Educação Infantil">
+                      <img class="thumb" src="img/educacao_infantil/thumb/educacao_infantil_41.JPG" alt="Orange">
+                  </a>
+                  <a href="img/educacao_infantil/educacao_infantil_42.JPG" title="Educação Infantil">
+                      <img class="thumb" src="img/educacao_infantil/thumb/educacao_infantil_42.JPG" alt="Orange">
+                  </a>
+                  <a href="img/educacao_infantil/educacao_infantil_43.JPG" title="Educação Infantil">
+                      <img class="thumb" src="img/educacao_infantil/thumb/educacao_infantil_43.JPG" alt="Orange">
+                  </a>
+                  <a href="img/educacao_infantil/educacao_infantil_44.JPG" title="Educação Infantil">
+                      <img class="thumb" src="img/educacao_infantil/thumb/educacao_infantil_44.JPG" alt="Orange">
+                  </a>
+                  <a href="img/educacao_infantil/educacao_infantil_45.JPG" title="Educação Infantil">
+                      <img class="thumb" src="img/educacao_infantil/thumb/educacao_infantil_45.JPG" alt="Orange">
+                  </a>
+                  <a href="img/educacao_infantil/educacao_infantil_46.JPG" title="Educação Infantil">
+                      <img class="thumb" src="img/educacao_infantil/thumb/educacao_infantil_46.JPG" alt="Orange">
+                  </a>
+                  
+                </div>
 
             </div>
           </div>
@@ -639,7 +649,7 @@
       
 
       <!-- blue imp --> 
-
+    <script src="js/jquery.blueimp-gallery.min.js"></script>  
     <script src="js/blueimp-gallery.min.js"></script>
 
     <script>
@@ -647,10 +657,23 @@ document.getElementById('links').onclick = function (event) {
     event = event || window.event;
     var target = event.target || event.srcElement,
         link = target.src ? target.parentNode : target,
-        options = {index: link, event: event},
+        options = {
+            index: link,
+            event: event
+        },
         links = this.getElementsByTagName('a');
     blueimp.Gallery(links, options);
 };
+</script>
+
+<script>
+blueimp.Gallery(
+    document.getElementById('carousel-infantil-1').getElementsByTagName('a'),
+    {
+        container: '#blueimp-gallery-carousel',
+        carousel: true
+    }
+);
 </script>
 
      <!-- My js --> 

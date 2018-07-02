@@ -360,15 +360,11 @@ p.first-line::first-line {
   overflow: hidden;
   margin: .2rem;
 }
+
 .thumb img {
   object-fit: cover;
-  
 }
 
-.bigger-thumb{
-  position: relative;
-  width: 110px;
-  height: 110px;
-  overflow: hidden;
-  margin: .2rem;
+.rotate180 {
+  transform: rotate(180deg);
 }

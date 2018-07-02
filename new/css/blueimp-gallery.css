@@ -45,9 +45,9 @@
   z-index: auto;
   margin: 1em auto;
   /* Set the carousel width/height ratio to 16/9: */
-  padding-bottom: 56.25%;
-  box-shadow: 0 0 10px #000;
-  -ms-touch-action: pan-y;
+  padding-bottom: 40.25%;
+/*  box-shadow: 0 0 10px #000;
+*/  -ms-touch-action: pan-y;
   touch-action: pan-y;
 }
 .blueimp-gallery-display {
@@ -98,11 +98,11 @@
 .blueimp-gallery > .next {
   position: absolute;
   top: 50%;
-  left: 15px;
+/*  left: 15px;
   width: 40px;
-  height: 40px;
+  height: 40px;*/
   margin-top: -23px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 60px;
   font-weight: 100;
   line-height: 30px;
@@ -118,7 +118,7 @@
   border: 3px solid #fff;
   -webkit-border-radius: 23px;
      -moz-border-radius: 23px;
-          border-radius: 23px;
+          border-radius: 23px;*/
   opacity: 0.5;
   cursor: pointer;
   display: none;
