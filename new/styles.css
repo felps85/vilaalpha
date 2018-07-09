@@ -14,10 +14,12 @@
 }
 
 :root {
-  --green-color: #00F37F;
-  --black-color: #4D4D4D;
-  --yellow-color: #FFE95A;
-  --red-color: #FF5A6E;
+  --green-color: #8AC926; /*rgb(138,201,38),00F37F*/
+  --black-color: #2D1E2F; /*rgb(45,30,47),4D4D4D*/
+  --yellow-color: #FFCA3A; /*rgb(255,202,58),FFE95A*/
+  --red-color: #FF595E; /*rgb(255,89,94), FF5A6E*/
+  --purple-color: #6A4C93; /*rgb(106,76,147)*/
+  --blue-color: rgb(53,144,243); /*#3590F3, rgb(53,144,243)*/
 }
 
 html,
@@ -44,9 +46,9 @@ body{
 
 .hero-image {
   background-image: linear-gradient(
-      rgba(255, 255, 255, 0.45), 
-      rgba(255, 255, 255, 0.45)
-    ), url("img/vilaalpha-header-4.png");
+      rgba(255, 255, 255, 0.8), 
+      rgba(255, 255, 255, 0.8)
+    ), url("img/vilaalpha-header-5.jpg");
   background-repeat: no-repeat;
   background-position: bottom fixed;
   background-size: cover;
@@ -120,7 +122,7 @@ body{
 }
 
 .shadow-green {
-    box-shadow: 0px 5px 30px 0px rgba(0,243,127,0.3);
+    box-shadow: 0px 5px 30px 0px rgba(var(--blue-color),0.3);
     transition: 0.3s;   
 }
 
@@ -336,30 +338,30 @@ p.first-line::first-line {
 }
  
 .btn-primary {
-    background: var(--green-color);
-    color: var(--black-color);
+    background: var(--blue-color);
+    color: white;
     border: 0 none;
     padding: 14px 36px;
     font-size: 1.2rem;
 }
  
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
-    background: var(--green-color);
+    background: var(--blue-color);
     filter: brightness(0.8);
 }
  
 .btn-primary:active, .btn-primary.active {
-    background: var(--green-color);
+    background: var(--blue-color);
     box-shadow: none;
 }
 
 .thumb{
   position: relative;
-  width: 35px;
-  height: 35px;
+/*  width: 35px;
+*/  height: 55px;
   overflow: hidden;
-  margin: .2rem;
-}
+/*  margin: .2rem;
+*/}
 
 .thumb img {
   object-fit: cover;
