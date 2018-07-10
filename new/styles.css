@@ -74,16 +74,17 @@ body{
 }
 
 .card-img-top {
-  width: 15rem;
+  margin-right: -4rem;
+  margin-top: -4rem;
 }
 
 .bigger-icon {
   width: 4rem;
 }
-
+/*
 .circle-shape{
   border-radius: 50%;
-
+*/
 }
 
 .logo-nav{
@@ -92,7 +93,7 @@ body{
 }
 
 .two-cards-size{
-  padding: 2rem;
+  padding: 1rem;
   margin: 4vw;
 }
 
