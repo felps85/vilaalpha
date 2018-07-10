@@ -206,7 +206,7 @@ footer ul{
 
 .modal .modal-dialog .modal-content .modal-body {
   border:0 !important;
-  background-color: var(--red-color);
+  background-color: var(--red-color) !important;
   border: none;
   padding: 0px;
     -webkit-border-radius: 0.3rem !important;
@@ -250,9 +250,9 @@ p.first-line::first-line {
     height: 100%;
 }
 
-.svg-divider{
+/*.svg-divider{
   width: 100% \9;
-}
+}*/
 
 
 /* toggle styling */

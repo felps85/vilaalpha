@@ -150,81 +150,89 @@
               <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                   
-                    <iframe
-                      id="JotFormIFrame-80862900718359"
-                      onload="window.parent.scrollTo(0,0)"
-                      allowtransparency="true"
-                      allowfullscreen="true"
-                      allow="geolocation; microphone; camera"
-                      src="https://form.jotformeu.com/vilaalpha/contato"
-                      frameborder="0"
-                      style="width: 1px;
-                      min-width: 100%;
-                      height:539px;
-                      border:none;"
-                      scrolling="no"
-                    >
-                    </iframe>
-                    <script type="text/javascript">
-                      var ifr = document.getElementById("JotFormIFrame-80862900718359");
-                      if(window.location.href && window.location.href.indexOf("?") > -1) {
-                        var get = window.location.href.substr(window.location.href.indexOf("?") + 1);
-                        if(ifr && get.length > 0) {
-                          var src = ifr.src;
-                          src = src.indexOf("?") > -1 ? src + "&" + get : src  + "?" + get;
-                          ifr.src = src;
-                        }
-                      }
-                      window.handleIFrameMessage = function(e) {
-                        var args = e.data.split(":");
-                        if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[(args.length - 1)]); } else { iframe = document.getElementById("JotFormIFrame"); }
-                        if (!iframe) { return; }
-                        switch (args[0]) {
-                          case "scrollIntoView":
-                            iframe.scrollIntoView();
-                            break;
-                          case "setHeight":
-                            iframe.style.height = args[1] + "px";
-                            break;
-                          case "collapseErrorPage":
-                            if (iframe.clientHeight > window.innerHeight) {
-                              iframe.style.height = window.innerHeight + "px";
-                            }
-                            break;
-                          case "reloadPage":
-                            window.location.reload();
-                            break;
-                          case "loadScript":
-                            var src = args[1];
-                            if (args.length > 3) {
-                                src = args[1] + ':' + args[2];
-                            }
-                            var script = document.createElement('script');
-                            script.src = src;
-                            script.type = 'text/javascript';
-                            document.body.appendChild(script);
-                            break;
-                          case "exitFullscreen":
-                            if      (window.document.exitFullscreen)        window.document.exitFullscreen();
-                            else if (window.document.mozCancelFullScreen)   window.document.mozCancelFullScreen();
-                            else if (window.document.mozCancelFullscreen)   window.document.mozCancelFullScreen();
-                            else if (window.document.webkitExitFullscreen)  window.document.webkitExitFullscreen();
-                            else if (window.document.msExitFullscreen)      window.document.msExitFullscreen();
-                            break;
-                        }
-                        var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
-                        if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
-                          var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)};
-                          iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*");
-                        }
-                      };
-                      if (window.addEventListener) {
-                        window.addEventListener("message", handleIFrameMessage, false);
-                      } else if (window.attachEvent) {
-                        window.attachEvent("onmessage", handleIFrameMessage);
-                      }
-                      </script>
+                  <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true"><img class="svg-close" src="img/icon/cancel.svg" alt="fechar"></span>
+                    </button>
+
+                    
+    <iframe
+      id="JotFormIFrame-80862900718359"
+      onload="window.parent.scrollTo(0,0)"
+      allowtransparency="true"
+      allowfullscreen="true"
+      allow="geolocation; microphone; camera"
+      src="https://form.jotformeu.com/vilaalpha/contato"
+      frameborder="0"
+      style="width: 1px;
+      min-width: 100%;
+      height:539px;
+      border:none;"
+      scrolling="no"
+    >
+    </iframe>
+    <script type="text/javascript">
+      var ifr = document.getElementById("JotFormIFrame-80862900718359");
+      if(window.location.href && window.location.href.indexOf("?") > -1) {
+        var get = window.location.href.substr(window.location.href.indexOf("?") + 1);
+        if(ifr && get.length > 0) {
+          var src = ifr.src;
+          src = src.indexOf("?") > -1 ? src + "&" + get : src  + "?" + get;
+          ifr.src = src;
+        }
+      }
+      window.handleIFrameMessage = function(e) {
+        var args = e.data.split(":");
+        if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[(args.length - 1)]); } else { iframe = document.getElementById("JotFormIFrame"); }
+        if (!iframe) { return; }
+        switch (args[0]) {
+          case "scrollIntoView":
+            iframe.scrollIntoView();
+            break;
+          case "setHeight":
+            iframe.style.height = args[1] + "px";
+            break;
+          case "collapseErrorPage":
+            if (iframe.clientHeight > window.innerHeight) {
+              iframe.style.height = window.innerHeight + "px";
+            }
+            break;
+          case "reloadPage":
+            window.location.reload();
+            break;
+          case "loadScript":
+            var src = args[1];
+            if (args.length > 3) {
+                src = args[1] + ':' + args[2];
+            }
+            var script = document.createElement('script');
+            script.src = src;
+            script.type = 'text/javascript';
+            document.body.appendChild(script);
+            break;
+          case "exitFullscreen":
+            if      (window.document.exitFullscreen)        window.document.exitFullscreen();
+            else if (window.document.mozCancelFullScreen)   window.document.mozCancelFullScreen();
+            else if (window.document.mozCancelFullscreen)   window.document.mozCancelFullScreen();
+            else if (window.document.webkitExitFullscreen)  window.document.webkitExitFullscreen();
+            else if (window.document.msExitFullscreen)      window.document.msExitFullscreen();
+            break;
+        }
+        var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
+        if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
+          var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)};
+          iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*");
+        }
+      };
+      if (window.addEventListener) {
+        window.addEventListener("message", handleIFrameMessage, false);
+      } else if (window.attachEvent) {
+        window.attachEvent("onmessage", handleIFrameMessage);
+      }
+      </script>
                       
+                    
+                  </div> 
                 </div>
               </div>
             </div>
@@ -300,7 +308,7 @@
 
           <!-- third row -->
           <div class="row my-5">
-            <div class="col-md-8 d-flex align-items-center">
+            <div class="col-md-6 d-flex align-items-center">
               <p class="first-line px-5">
               <strong>Objetivos:</strong><br>
 - Desenvolver uma estrutura cognitiva, emocional, afetiva que sustente as escolhas de vida dessas crianças e jovens. 
@@ -313,7 +321,7 @@
             </div>
 
 
-            <div class="col-md-4 order-first order-md-2 my-3">
+            <div class="col-md-6 order-first order-md-2 my-3">
               
               <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
                     <div class="slides"></div>
@@ -529,11 +537,9 @@ Nosso planejamento é em forma de projetação orgânica ou emergente. Diferente
     <!-- Footer start -->
 
      <!-- red divider normal -->
-        <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="133" viewBox="0 0 1440 133" class="d-block img-fluid svg-divider">
-            <g fill="#FF5A6E">
-              <path d="M-720-18.8C-376-179.8-73.8 133.2 720-18.8L720 66.2 -720 66.2 -720-18.8Z" transform="translate(720 66.763095)scale(-1 1)"/>
-            </g>
-        </svg>
+        <svg class="wave red-wave d-block margintop-100" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
+      <path d="M0 100 C 20 0 50 0 100 100 Z" />
+    </svg>
 
 
     <!-- Footer start -->
