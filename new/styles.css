@@ -20,6 +20,7 @@
   --red-color: #FF595E; /*rgb(255,89,94), FF5A6E*/
   --purple-color: #6A4C93; /*rgb(106,76,147)*/
   --blue-color: #3590F3; /*#3590F3, rgb(53,144,243)*/
+  --light-color: #f5f9fa;
 }
 
 html,
@@ -64,6 +65,10 @@ body{
    width: 50%;
 }
 
+.light-bg{
+  background-color: var(--light-color);
+}
+
 .red-bg {
   background-color: var(--red-color);
 }
@@ -85,10 +90,10 @@ body{
 */
 }
 
-.logo-nav{
-  display: block;
-  height: 50px;
-}
+
+
+
+
 
 .two-cards-size{
   padding: 1rem;
@@ -323,6 +328,7 @@ p.first-line::first-line {
 .margintop-100{
   margin-top: -100px;
 }
+
 
 .marginbottom-100{
   margin-bottom: -100px;
