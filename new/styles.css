@@ -77,10 +77,6 @@ body{
   background-color: var(--yellow-color);
 }
 
-.card-img-top {
-  margin-top: -2rem;
-}
-
 .bigger-icon {
   width: 4rem;
 }
