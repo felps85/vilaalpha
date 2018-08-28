@@ -6,7 +6,9 @@ var numberOfParticules = 30;
 var pointerX = 0;
 var pointerY = 0;
 var tap = ('ontouchstart' in window || navigator.msMaxTouchPoints) ? 'touchstart' : 'mousedown';
-var colors = ['#FF1461', '#18FF92', '#5A87FF', '#FBF38C'];
+var colors = ['#8AC926', '#FFCA3A', '#FF595E', '#6A4C93'];
+
+// '#FF1461', '#18FF92', '#5A87FF', '#FBF38C'
 
 function setCanvasSize() {
   canvasEl.width = window.innerWidth * 2;
