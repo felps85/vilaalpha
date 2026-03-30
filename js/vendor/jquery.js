@@ -5791,10 +5791,10 @@ function remove( elem, selector, keepData ) {
 	return elem;
 }
 
-jQuery.extend( {
-	htmlPrefilter: function( html ) {
-		return html.replace( rxhtmlTag, "<$1></$2>" );
-	},
+	jQuery.extend( {
+		htmlPrefilter: function( html ) {
+			return html;
+		},
 
 	clone: function( elem, dataAndEvents, deepDataAndEvents ) {
 		var i, l, srcElements, destElements,
